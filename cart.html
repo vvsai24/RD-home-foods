@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cart - RD Home Foods</title>
+  <link rel="stylesheet" href="cart.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>RD Home Foods</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="veg-pickles.html">Veg Pickles</a>
+      <a href="vadiyalu.html">Vadiyalu</a>
+      <a href="podulu.html">Podulu</a>
+      <a href="sweets.html">Sweets</a>
+      <a href="hots.html">Hots</a>
+      <a href="account.html">Account</a>
+      <a href="cart.html" class="active">Cart</a>
+    </nav>
+  </header>
+
+  <main class="cart-container">
+    <h2>Your Shopping Cart</h2>
+
+    <!-- Example Cart Item -->
+    <div class="cart-item">
+      <img src="images/tomato-pickle.jpg" alt="Tomato Pickle">
+      <div class="item-details">
+        <h4>Tomato Pickle</h4>
+        <p>Traditional Andhra Style, 250g</p>
+      </div>
+      <div class="item-price">₹150</div>
+      <button class="remove-btn">Remove</button>
+    </div>
+
+    <div class="cart-item">
+      <img src="images/mango-pickle.jpg" alt="Mango Pickle">
+      <div class="item-details">
+        <h4>Mango Pickle</h4>
+        <p>With Cold Pressed Oil, 500g</p>
+      </div>
+      <div class="item-price">₹220</div>
+      <button class="remove-btn">Remove</button>
+    </div>
+
+    <!-- Add more cart-item blocks as needed -->
+
+    <div class="cart-summary">
+      <h3>Total: ₹370</h3>
+      <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </main>
+</body>
+</html>

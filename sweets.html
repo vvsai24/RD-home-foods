@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Veg Pickles - RD Home Foods</title>
+   <link rel="stylesheet" href="sweets.css" >
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background-color: #fafafa;
+      color: #333;
+    }
+    header {
+      background-color: #008080;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover, nav a:focus {
+      text-decoration: underline;
+      color: #a0eaea;
+    }
+    .hero {
+      background: linear-gradient(90deg, #008080cc, #004d4dcc);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .hero h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+    .hero p {
+      font-style: italic;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    /* Gallery grid */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .gallery-item {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+    .gallery-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      z-index: 10;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+    .gallery-item .caption {
+      padding: 0.75rem 1rem;
+      font-weight: bold;
+      text-align: center;
+      background-color: #008080cc;
+      color: white;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+      transition: background-color 0.3s ease;
+    }
+    .gallery-item:hover .caption {
+      background-color: #005f5fcc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #333;
+      color: white;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 700px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 450px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>RD Home Foods</strong></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="veg-pickles.html">Veg Pickles</a>
+      <a href="vadiyalu.html">Vadiyalu</a>
+      <a href="podulu.html">Podhulu</a>
+      <a href="sweets.html">Sweets</a>
+      <a href="hots.html">Hots</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="account.html">Account</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Sweets</h1>
+    <p>Authentic and flavorful sweets made fresh daily!</p>
+  </section>
+
+  <section class="gallery">
+    <div class="gallery-item">
+      <img src="images/veg-pickles/pickle1.jpg" alt="Lemon Pickle" />
+      <div class="caption">Lemon Pickle</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/veg-pickles/pickle2.jpg" alt="Carrot Pickle" />
+      <div class="caption">Carrot Pickle</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/veg-pickles/pickle3.jpg" alt="Green Chili Pickle" />
+      <div class="caption">Green Chili Pickle</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/veg-pickles/pickle4.jpg" alt="Mixed Veg Pickle" />
+      <div class="caption">Mixed Veg Pickle</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/veg-pickles/pickle5.jpg" alt="Tomato Pickle" />
+      <div class="caption">Tomato Pickle</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/veg-pickles/pickle6.jpg" alt="Mango Pickle" />
+      <div class="caption">Mango Pickle</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/veg-pickles/pickle7.jpg" alt="Ginger Pickle" />
+      <div class="caption">Ginger Pickle</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/veg-pickles/pickle8.jpg" alt="Garlic Pickle" />
+      <div class="caption">Garlic Pickle</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/veg-pickles/pickle9.jpg" alt="Gongura Pickle" />
+      <div class="caption">Gongura Pickle</div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 RD Home Foods. All rights reserved.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,124 @@
+/* General body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff9f4; /* Slightly warm background */
+  color: #333;
+  margin: 20px;
+  line-height: 1.5;
+}
+
+/* Page header */
+header {
+  border-bottom: 3px solid #c94f30; /* Warm reddish accent for Veg Pickles */
+  padding-bottom: 12px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+header.veg-header h1 {
+  color: #c94f30;
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+/* Section container */
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/* Intro paragraph below header */
+.intro-text {
+  font-style: italic;
+  color: #7a4b2b;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+/* Gallery container */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Individual product cards */
+.card {
+  background-color: white;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(201, 79, 48, 0.3);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(201, 79, 48, 0.5);
+}
+
+/* Card image styling */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 3px solid #c94f30;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Card title */
+.card h4 {
+  margin: 15px 0 5px;
+  color: #c94f30;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* Card price */
+.card p {
+  color: #555;
+  font-weight: 600;
+  margin: 0 0 15px;
+  font-size: 1rem;
+}
+
+/* Add to cart button */
+.card button {
+  background-color: #c94f30;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.card button:hover {
+  background-color: #922a18;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .gallery {
+    gap: 15px;
+  }
+
+  .card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+}

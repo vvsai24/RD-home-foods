@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3f7fa;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  background: #ffffff;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #008080;
+  font-size: 1.8rem;
+}
+
+nav a {
+  margin-left: 18px;
+  text-decoration: none;
+  color: #006666;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #008080;
+  color: #ffffff;
+}
+
+.account-container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.account-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #008080;
+  margin-bottom: 30px;
+}
+
+.account-box {
+  background-color: #f9fdfd;
+  border: 1px solid #dde;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.account-box h3 {
+  margin-bottom: 15px;
+  color: #006666;
+}
+
+.account-box p,
+.account-box li {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+.account-box ul {
+  list-style: square inside;
+}
+
+@media screen and (max-width: 768px) {
+  .account-container {
+    padding: 20px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
